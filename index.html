@@ -3,9 +3,92 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Mohamed Abdirahman's CV</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #e2dcaa;
+            color: #333;
+        }
+        header {
+            text-align: center;
+            padding: 20px;
+            background-color: #c87502;
+            color: white;
+        }
+        header img {
+            border-radius: 50%;
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+        }
+        main {
+            padding: 20px;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        section {
+            margin-bottom: 20px;
+        }
+        section h2 {
+            border-bottom: 2px solid #c88302;
+            padding-bottom: 5px;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        ul li {
+            padding: 10px;
+            background-color: #e2dcaa;
+            border: 1px solid #0d0505;
+            margin-bottom: 5px;
+            border-radius: 5px;
+        }
+        ul li strong {
+            color: #2e7ab0;
+        }
+        a {
+            color: rgb(139, 236, 141);
+        }
+    </style>
 </head>
 <body>
-    <h1>Hello World</h1>
+    <header>
+        <img src="./images/{{user.photo}}" alt="">
+        <h1>{{user.fullName}}</h1>
+        <p>Phone: {{user.phone}}</p>
+        <p>Email: <a href="mailto:{{user.email}}">{{user.email}}</a></p>
+    </header>
+    <main>
+        <section>
+            <img src="./images/{{education.photo}}" alt="" width="180">
+            <h2>Education</h2>
+            <p>{{education.institutionName}}</p>
+            <p>{{education.description}}</p>
+        </section>
+        <section>
+            <h2>Favourite Subjects</h2>
+            <ul>
+                {{#each favouriteSubjects}}
+                <li>
+                    <strong>{{this.name}}</strong>: {{this.description}}
+                </li>
+                {{/each}}
+            </ul>
+        </section>
+        <section>
+            <h2>Foreign Languages</h2>
+            <ul>
+                {{#each foreignLanguage.phrases}}
+                <li>
+                    <strong>{{this.englishPhrase}}</strong>: {{this.foreignLanguage}}
+                </li>
+                {{/each}}
+            </ul>
+        </section>
+    </main>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 </body>
 </html>

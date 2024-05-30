@@ -1,38 +1,46 @@
 {
     "user" : {
-        "fullName" : "",
-        "photo" : "",
-        "phone" : "",
-        "email" : ""
+        "fullName" : "Mohamed Abdirahman",
+        "photo" : "Profile pic.jpg",
+        "phone" : "0784565757",
+        "email" : "mohaminali100@gmail.com"
     },
     "education" : {
-        "institutionName" : "",
-        "photo" : "",
-        "description" : ""
+        "institutionName" : "Univesity of South Africa",
+        "photo" : "Unisa_Logo.webp",
+        "description" : "BSc Honours in Computing"
     },
     "foreignLanguage" : {
-        "language" : "",
+        "language" : "French",
         "phrases" : [{
-            "englishPhrase" : "",
-            "foreignLanguage" : ""
+            "englishPhrase" : "The only way to do great work is to love what you do",
+            "foreignLanguage" : "La seule façon de faire un travail formidable est d'aimer ce que vous faites"
         },
         {
-            "englishPhrase" : "",
-            "foreignLanguage" : ""
-        }]
-    },
+            "englishPhrase" : "In the middle of difficulty lies opportunity",
+            "foreignLanguage" : "Au milieu de la difficulté se trouve l'opportunité"
+        },
+         {
+        "englishPhrase" : "Be the change that you wish to see in the world",
+            "foreignLanguage" : "Soyez le changement que vous souhaitez voir dans le monde"
+         },
+         {
+           "englishPhrase" : "The future belongs to those who believe in the beauty of their dreams",
+           "foreignLanguage" : "L'avenir appartient à ceux qui croient en la beauté de leurs rêves."
+         }]
+        },
     "favouriteSubjects" : [
         {
-            "name" : "",
-            "description" : ""
+            "name" : "Software Engineering",
+            "description" : "The scope of Software Engineering is broad, encompassing both technical and managerial aspects. Some principles fall into the fields of Computer Science and Mathematics, whereas others are derived from Economics, Management Science and Psychology."
         },
         {
-            "name" : "",
-            "description" : ""
+            "name" : "Information Security",
+            "description" : "Security, as a core requirement when creating systems and software, introduce the fundamentals of computer security and cryptography,  both the technical and managerial issues."
         },
         {
-            "name" : "",
-            "description" : ""
+            "name" : "Human-Computer Interaction",
+            "description" : " The purpose of this module is to enable students to be able to demonstrate knowledge about Human Computer Interaction concepts and principles relating to measuring the user experience."
         }
     ]
 }
