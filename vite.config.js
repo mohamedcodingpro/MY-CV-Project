@@ -6,7 +6,7 @@ export default {
     handlebars({
       context: 
         data
-      , // replace the curly brackets with data.json
+      , 
       
     }),
   ],
