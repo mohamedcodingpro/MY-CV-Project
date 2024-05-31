@@ -52,6 +52,16 @@
         a {
             color: rgb(139, 236, 141);
         }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #c87502;
+            color: white;
+            margin-top: 20px;
+        }
+        .contact-form {
+            margin-top: 20px;
+        }
     </style>
 </head>
 <body>
@@ -87,12 +97,72 @@
                 </li>
                 {{/each}}
             </ul>
-
-
-            
+        </section>
+        <section>
+            <h2>Work Experience</h2>
+            <ul>
+                {{#each workExperience}}
+                <li>
+                    <strong>{{this.position}}</strong> at <strong>{{this.company}}</strong> ({{this.startDate}} - {{this.endDate}}): {{this.description}}
+                </li>
+                {{/each}}
+            </ul>
+        </section>
+        <section>
+            <h2>Skills</h2>
+            <ul>
+                {{#each skills}}
+                <li>{{this}}</li>
+                {{/each}}
+            </ul>
+        </section>
+        <section>
+            <h2>Projects</h2>
+            <ul>
+                {{#each projects}}
+                <li>
+                    <strong>{{this.name}}</strong>: {{this.description}} <a href="{{this.link}}" target="_blank">View Project</a>
+                </li>
+                {{/each}}
+            </ul>
+        </section>
+        <section>
+            <h2>Awards</h2>
+            <ul>
+                {{#each awards}}
+                <li>
+                    <strong>{{this.title}}</strong> ({{this.year}}): {{this.description}}
+                </li>
+                {{/each}}
+            </ul>
+        </section>
+        <section class="contact-form">
+            <h2>Contact Me</h2>
+            <form action="mailto:{{user.email}}" method="post" enctype="text/plain">
+                <div class="input-field">
+                    <input type="text" id="name" name="name" required>
+                    <label for="name">Name</label>
+                </div>
+                <div class="input-field">
+                    <input type="email" id="email" name="email" required>
+                    <label for="email">Email</label>
+                </div>
+                <div class="input-field">
+                    <textarea id="message" name="message" class="materialize-textarea" required></textarea>
+                    <label for="message">Message</label>
+                </div>
+                <button type="submit" class="btn">Send</button>
+            </form>
         </section>
     </main>
-
+    <footer>
+        &copy; {{currentYear}} Mohamed Abdirahman. All rights reserved.
+    </footer>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            M.updateTextFields();
+        });
+    </script>
 </body>
 </html>
