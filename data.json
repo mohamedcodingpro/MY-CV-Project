@@ -1,6 +1,6 @@
 {
-    user: {
-        fullName: "Mohamed",
-        photo: "images/Profile pic.jpg"
+    "user": {
+        "fullName": "Mohamed",
+        "photo": "images/Profile pic.jpg"
     }
 }
