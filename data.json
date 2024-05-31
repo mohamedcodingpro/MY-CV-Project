@@ -1,4 +1,29 @@
-
+{
+    "user" : {
+        "fullName" : "Mohamed Abdirahman",
+        "photo" : "Profile pic.jpg",
+        "phone" : "0784565757",
+        "email" : "mohaminali100@gmail.com"
+    },
+    "education" : {
+        "institutionName" : "Univesity of South Africa",
+        "photo" : "Unisa_Logo.webp",
+        "description" : "BSc Honours in Computing"
+    },
+    "foreignLanguage" : {
+        "language" : "French",
+        "phrases" : [{
+            "englishPhrase" : "The only way to do great work is to love what you do",
+            "foreignLanguage" : "La seule façon de faire un travail formidable est d'aimer ce que vous faites"
+        },
+        {
+            "englishPhrase" : "In the middle of difficulty lies opportunity",
+            "foreignLanguage" : "Au milieu de la difficulté se trouve l'opportunité"
+        },
+         {
+        "englishPhrase" : "Be the change that you wish to see in the world",
+            "foreignLanguage" : "Soyez le changement que vous souhaitez voir dans le monde"
+         },
          {
            "englishPhrase" : "The future belongs to those who believe in the beauty of their dreams",
            "foreignLanguage" : "L'avenir appartient à ceux qui croient en la beauté de leurs rêves."
