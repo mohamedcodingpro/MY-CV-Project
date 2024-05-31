@@ -52,6 +52,16 @@
         a {
             color: rgb(139, 236, 141);
         }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #c87502;
+            color: white;
+            margin-top: 20px;
+        }
+        .contact-form {
+            margin-top: 20px;
+        }
     </style>
 </head>
 <body>
@@ -98,12 +108,54 @@
                     <strong>The future belongs to those who believe in the beauty of their dreams</strong>: L&#x27;avenir appartient à ceux qui croient en la beauté de leurs rêves.
                 </li>
             </ul>
-
-
-            
+        </section>
+        <section>
+            <h2>Work Experience</h2>
+            <ul>
+            </ul>
+        </section>
+        <section>
+            <h2>Skills</h2>
+            <ul>
+            </ul>
+        </section>
+        <section>
+            <h2>Projects</h2>
+            <ul>
+            </ul>
+        </section>
+        <section>
+            <h2>Awards</h2>
+            <ul>
+            </ul>
+        </section>
+        <section class="contact-form">
+            <h2>Contact Me</h2>
+            <form action="mailto:mohaminali100@gmail.com" method="post" enctype="text/plain">
+                <div class="input-field">
+                    <input type="text" id="name" name="name" required>
+                    <label for="name">Name</label>
+                </div>
+                <div class="input-field">
+                    <input type="email" id="email" name="email" required>
+                    <label for="email">Email</label>
+                </div>
+                <div class="input-field">
+                    <textarea id="message" name="message" class="materialize-textarea" required></textarea>
+                    <label for="message">Message</label>
+                </div>
+                <button type="submit" class="btn">Send</button>
+            </form>
         </section>
     </main>
-
+    <footer>
+        &copy;  Mohamed Abdirahman. All rights reserved.
+    </footer>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            M.updateTextFields();
+        });
+    </script>
 </body>
 </html>
